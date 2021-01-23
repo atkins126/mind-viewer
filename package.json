@@ -1,16 +1,11 @@
 {
-  "name": "xmind-viewer",
+  "name": "mind-viewer",
   "version": "1.1.2",
   "description": "",
   "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rm -rf ./dist && node_modules/.bin/tsc"
-  },
-  "author": {
-    "name": "XMind Ltd.",
-    "email": "support@xmind.net",
-    "url": "https://www.xmind.net"
   },
   "license": "MIT",
   "devDependencies": {
