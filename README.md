@@ -1,31 +1,28 @@
-# **DEPRECATED** - Never ever use it in a production environment!
+# Mind Viewer 
 
-# XMind Viewer 
+Mind Viewer, is a lightweight library to parse a `.xmind` file and render it in `SVG`.
 
-XMind Viewer, is a lightweight library to parse a `.xmind` file and render it in `SVG`.
+It's very useful for showing a mind map on any web pages. Like a blog post, a book introduction, a page navigation, etc. All versions of XMind files are compatiable, which means you can generate an XMind file with `XMind SDK` and then render it with `Mind Viewer`. Cool?
 
-It's very useful for showing a mind map on any web pages. Like a blog post, a book introduction, a page navigation, etc. All versions of XMind files are compatiable, which means you can generate an XMind file with `XMind SDK` and then render it with `XMind Viewer`. Cool?
-
-XMind Viewer is an official project, made by XMind team, and written in TypeScript.
-
+Mind Viewer is forked from [xmind-viewer](https://github.com/xmindltd/xmind-viewer/), since it's deprecated.
 
 ## Usage and Getting Started
 
 ### Usage in Node.js
 
 ```shell
-$ npm i --save xmind-viewer
+$ npm i --save mind-viewer
 ```
 
 ```js
-const { loadFromXMind, SnowbrushRenderer } = require('xmind-viewer')
+const { loadFromXMind, SnowbrushRenderer } = require('mind-viewer')
 ```
 
 ### Simple Usage
 
 ```ts
 import JSZip from 'jszip'
-import { loadFromXMind, SnowbrushRenderer } from 'xmind-viewer'
+import { loadFromXMind, SnowbrushRenderer } from 'mind-viewer'
 
 new JSZip().loadAsync(zipFile).then(zip => {
 	loadFromXMind(zip).then(data => {
